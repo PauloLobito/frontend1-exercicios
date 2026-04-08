@@ -1,0 +1,25 @@
+{
+    "alunos":[
+        {
+            "id" : 0,
+            "nome" : "Paulo",
+            "idade" : 28,
+            "email" : "paulo_lobito@eticalgarve.com"
+        },
+
+        {
+            "id" : 1,
+            "nome" : "Joao",
+            "idade" : 20,
+            "email" : "Joao_francisco@eticalgarve.pt"
+        },
+
+        {
+            "id" : 2,
+            "nome" : "Ana",
+            "idade" : 29,
+            "emai" : "Ana_Bela@eticalgarve.com"
+
+        }
+    ]
+}
