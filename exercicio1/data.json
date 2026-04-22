@@ -1,0 +1,23 @@
+{
+    "pessoas" : {
+        "nome" : "João",
+        "sobrenome" : "Silva",
+        "idade" : 30,
+        "cidade" : "São Paulo"
+    },
+
+    "carros" :{
+        "marca" : "Toyota",
+        "modelo" : "Corolla",
+        "ano" : 2020,
+        "cor" : "Prata" 
+    },
+
+    "Animais" : {
+        "tipo" : "Cachorro",
+        "nome" : "Rex",
+        "idade" : 5,
+        "raça" : "Labrador"
+    }
+
+}

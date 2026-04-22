@@ -1,23 +1,24 @@
-let pessoa ={
-    nome: "Paulo",
-    idade: 28 ,
-    activo: true ,
-    status: "solteiro",
-    email: "paulo_loito@eticalgarve.com"
-}
-//Objecto para JSON
-let JsonString = JSON.stringify(pessoa)
-console.log(JsonString)
-console.log("-------------------")
-//JSON para Objecto JS
-let obj = JSON.parse(JsonString)
-console.log(obj)
-console.log("-------------------")
-//Vai buscar o main.Json
-fetch("main.json")
-    .then(response => response.json())
-    .then(data => 
-    {
-        console.log(data);
-    })
+let pessoa = {
+    nome: "João",
+    idade :30,
+    email: "joao@example.com"
+};
 
+let obj = JSON.stringify(pessoa);
+console.log(obj);
+console.log("-------------------------------")
+let ObjJason = JSON.parse(obj);
+console.log(ObjJason);
+console.log("-------------------------------")
+
+
+fetch("./data.json")
+.then(resposta => resposta.json())
+.then(dados =>{
+    console.log("Nome do JSON: ", dados);
+    console.log("Nome da Pessoa: ",dados.pessoas.nome);
+    console.log("Marca do Carro: ",dados.carros.marca);
+})
+.catch(erro => {
+    console.error("Falha ao carregar o JSON:",erro);
+})
