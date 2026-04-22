@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+</head>
+
+<body>
+    <section class="splide" aria-labelledby="carousel-heading">
+        <h2 id="carousel-heading">Splide Basic HTML Example</h2>
+
+
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img src="https://picsum.photos/205/300" alt=""></li>
+                <li class="splide__slide"><img src="https://picsum.photos/212/300" alt=""></li>
+                <li class="splide__slide"><img src="https://picsum.photos/200/300" alt=""></li>
+                <li class="splide__slide"><img src="https://picsum.photos/200/300" alt=""></li>
+                <li class="splide__slide"><img src="https://picsum.photos/204/300" alt=""></li>
+                <li class="splide__slide"><img src="https://picsum.photos/202/300" alt=""></li>
+            </ul>
+        </div>
+    </section>
+    <h1>Animações com GSAP</h1>
+
+    <button onclick="animarSimples()">Mover</button>
+    <button onclick="animarRotacao()">Rodar</button>
+    <button onclick="animarSequencia()">Sequencia</button>
+    <button onclick="animarMouse()">Espiar</button>
+
+    <div class="box"></div>
+
+
+   
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="script.js"></script>
+
+
+
+
+</html>
