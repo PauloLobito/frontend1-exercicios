@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+    <section class="hero-section">
+        <h1 id="titulo" data-aos="fade-down" data-aos-duration="800">
+            <span>T</span><span>a</span><span>s</span><span>k</span><span>i</span><span>f</span><span>y</span>
+        </h1>
+    </section>
+
+    <section class="content-section">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <section class="input-section">
+                <div class="input-group">
+                    <input type="text" id="inputTarefa" placeholder="Adicione uma nova tarefa..." maxlength="100">
+                    <button id="btnAdicionar" class="btn btn-primary">
+                        <span class="btn-icon">+</span>
+                        Adicionar
+                    </button>
+                </div>
+            </section>
+
+            <section class="filters">
+                <button class="filter-btn active" data-filter="todas">Todas</button>
+                <button class="filter-btn" data-filter="pendentes">Pendentes</button>
+                <button class="filter-btn" data-filter="concluidas">Concluidas</button>
+            </section>
+            <section class="table-section">
+                <div class="table-wrapper">
+                    <table class="tabela-tarefas">
+                        <thead>
+                            <tr>
+                                <th>Tarefa</th>
+                                <th>Criada em</th>
+                                <th>Status</th>
+                                <th>Acoes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="listaTarefas"></tbody>
+                    </table>
+                </div>
+                <div id="mensagemVazia" class="mensagem-vazia">
+                    <p>Nenhuma tarefa ainda.Cria uma nova!</p>
+                </div>
+            </section>
+            <section class="stats">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalTarefas">0</div>
+                    <div class="stat-label">Total</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="tarefasConcluidas">0</div>
+                    <div class="stat-label">Concluidas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="tarefasPendentes">0</div>
+                    <div class="stat-label">Pendentes</div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Modal de edicao -->
+    <div id="modalEdicao" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Editar Tarefa</h2>
+                <button class="btn-close" id="btnFecharModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="inputEdicao" class="input-tarefa" maxlength="100" placeholder="Editar tarefa...">
+            </div>
+            <div class="modal-footer">
+                <button id="btnCancelar" class="btn btn-secondary">Cancelar</button>
+                <button id="btnSalvar" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
