@@ -43,15 +43,6 @@ Taskify permite criar, listar, editar, concluir e apagar tarefas com uma interfa
 2. Abrir o ficheiro FINAL/index.html no browser.
 3. Interagir com a app e validar o CRUD.
 
-## Publicacao no GitHub Pages
-
-Sugestao para publicar apenas a pasta FINAL numa branch dedicada:
-
-1. Fazer commit das alteracoes na branch principal.
-2. Criar branch gh-pages com o conteudo de FINAL.
-3. Fazer push da branch gh-pages para o remoto.
-4. No GitHub, em Settings > Pages, selecionar Deploy from a branch.
-5. Escolher a branch gh-pages e a pasta raiz (/).
 
 ## Autor
 

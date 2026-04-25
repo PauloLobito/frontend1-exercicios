@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9 - Web Components</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="../components/navbar.js"></script>
+</head>
+
+<body>
+    <app-navbar></app-navbar>
+
+    <main class="container">
+        <h1>Exercicio 9</h1>
+        <p>Componente cartao-utilizador com template + Shadow DOM.</p>
+
+        <section class="cards">
+            <cartao-utilizador nome="Paulo" idade="22"></cartao-utilizador>
+            <cartao-utilizador nome="Ana" idade="19"></cartao-utilizador>
+            <cartao-utilizador nome="Joao" idade="27"></cartao-utilizador>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

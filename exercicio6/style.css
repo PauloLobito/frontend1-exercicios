@@ -1,0 +1,150 @@
+:root {
+    --bg: #f2f6ff;
+    --card: #ffffff;
+    --text: #12243a;
+    --primary: #1d4ed8;
+    --accent: #0ea5a4;
+    --border: #dbe3ef;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--text);
+    background:
+        radial-gradient(circle at 10% 10%, rgba(29, 78, 216, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 90% 20%, rgba(14, 165, 164, 0.12) 0%, transparent 35%),
+        linear-gradient(180deg, #eef3fb, var(--bg));
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+h1 {
+    margin: 0 0 8px;
+    letter-spacing: 0.3px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    margin-top: 16px;
+    box-shadow: 0 10px 25px rgba(18, 36, 58, 0.06);
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.preview-box {
+    border: 1px dashed #9eb2cf;
+    border-radius: 12px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8fbff 0%, #ecf5ff 100%);
+}
+
+.preview-box:fullscreen {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: #ffffff;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+button {
+    border: none;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.07);
+}
+
+button.secondary {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.datetime-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 14px 0;
+}
+
+.datetime-panel {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px;
+    background: #f9fbff;
+}
+
+.datetime-panel h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.clock-value {
+    margin: 4px 0;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: var(--primary);
+}
+
+.date-value {
+    margin: 0;
+    font-size: 16px;
+    color: #334155;
+}
+
+.datetime-panel label {
+    display: block;
+    font-size: 13px;
+    margin: 8px 0 6px;
+}
+
+.datetime-panel select {
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #ffffff;
+    padding: 8px;
+    color: #0f172a;
+}
+
+.datetime-panel button {
+    margin-top: 12px;
+}
+
+.hint {
+    color: #4e6179;
+    font-size: 14px;
+}
+
+@media (max-width: 680px) {
+    .datetime-grid {
+        grid-template-columns: 1fr;
+    }
+}

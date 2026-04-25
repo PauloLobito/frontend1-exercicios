@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6 - APIs Nativas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Exercicio 6</h1>
+        <p>Exemplo com 2 APIs nativas do browser com testes visuais.</p>
+
+        <section class="card">
+            <h2>1) Fullscreen API</h2>
+            <p id="fullscreenStatus">Estado do ecrã: normal</p>
+            <div class="actions">
+                <button id="btnEntrarFullscreen" type="button">Entrar em fullscreen</button>
+                <button id="btnSairFullscreen" type="button" class="secondary">Sair de fullscreen</button>
+            </div>
+            <div id="fullscreenTarget" class="preview-box">
+                <strong>Área de demonstração</strong>
+                <p>Ao entrar em fullscreen, este bloco ocupa todo o ecrã.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>2) DateTime API</h2>
+            <p id="dateTimeStatus">Relogio em tempo real.</p>
+
+            <div class="datetime-grid">
+                <div class="datetime-panel">
+                    <h3>Agora</h3>
+                    <p id="clockNow" class="clock-value">--:--:--</p>
+                    <p id="dateNow" class="date-value">--/--/----</p>
+                </div>
+
+                <div class="datetime-panel">
+                    <h3>Formatacao</h3>
+                    <label for="localeSelect">Locale</label>
+                    <select id="localeSelect">
+                        <option value="pt-PT">pt-PT</option>
+                        <option value="pt-BR">pt-BR</option>
+                        <option value="en-US">en-US</option>
+                    </select>
+
+                    <label for="timezoneSelect">Timezone</label>
+                    <select id="timezoneSelect">
+                        <option value="Europe/Lisbon">Europe/Lisbon</option>
+                        <option value="America/Sao_Paulo">America/Sao_Paulo</option>
+                        <option value="UTC">UTC</option>
+                    </select>
+
+                    <button id="btnAtualizarDateTime" type="button" class="secondary">Atualizar visualizacao</button>
+                </div>
+            </div>
+
+            <p id="formattedDateTime">Data formatada: -</p>
+            <p id="timestampValue">Timestamp (ms): -</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

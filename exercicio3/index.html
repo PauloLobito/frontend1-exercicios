@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercicio 3</title>
 </head>
+
 <body>
-    Password: <input id="password" type="password"><br><br>
-    <input id="btn_submit" type="submit" value="Guardar">
-    <div id="result"></div>
+    <h1>Sistema de Alunos</h1>
+
+    <form id="formAluno">
+        <label for="nomeAluno">Nome do aluno</label>
+        <input id="nomeAluno" type="text" placeholder="Digite o nome" required>
+
+        <label for="notaFrontend">Nota Frontend</label>
+        <input id="notaFrontend" type="number" min="0" max="20" step="0.1" required>
+
+        <label for="notaBackend">Nota Backend</label>
+        <input id="notaBackend" type="number" min="0" max="20" step="0.1" required>
+
+        <label for="notaDesign">Nota Design</label>
+        <input id="notaDesign" type="number" min="0" max="20" step="0.1" required>
+
+        <button id="btnGuardar" type="submit">Guardar</button>
+    </form>
+
+    <h2>Alunos guardados</h2>
+    <div id="listaAlunos"></div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
